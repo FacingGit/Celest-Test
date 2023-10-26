@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .cool-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .cool-button:hover {
+    background-color: #2980b9;
+  }
+</style>
+</head>
+<body>
+  <a href="#" class="cool-button" onclick="runCode(event)">Click Me</a>
+
+  <script>
+    function runCode(event) {
+      event.preventDefault(); // Prevent the default link behavior
+      // Add your JavaScript code here
+      alert("Button Clicked!");
+      // You can replace the alert with any code you want to run when the button is clicked.
+    }
+  </script>
+</body>
+</html>
